@@ -18,7 +18,7 @@ console.log("il chilometraggio scelto dall'utente è:",chilometraggio);
 // calcolo il prezzo in base alla distanza
 
 let prezzoKm = prezzoAlKm * chilometraggio;
-console.log("Il prezzo per il chilometraggio selezionato è:", prezzoKm)
+console.log("Il prezzo per il chilometraggio selezionato è:", prezzoKm);
 
 // chiedo l'età
 
@@ -29,7 +29,7 @@ console.log("l'età dell utente è:",etaUtente);
 
 if(etaUtente<18){
 
-    prezzoKm = prezzoKm * sconto18
+    prezzoKm = prezzoKm * sconto18;
    
 }else if(etaUtente>=65){
 
@@ -37,15 +37,17 @@ if(etaUtente<18){
 
 }
 
-console.log("Il prezzo dopo l'applicazione di eventuali sconti e privo di tagli di decimali è", prezzoKm)
+console.log("Il prezzo dopo l'applicazione di eventuali sconti e privo di tagli di decimali è", prezzoKm);
 
 // taglio i decimali in eccesso
 
-let prezzofinale = Math.round(prezzoKm * 100) / 100
+let prezzoFinale = Math.round(prezzoKm * 100) / 100;
 
 // Do il prezzo finale
 
-console.log("Il prezzo finale è",prezzofinale)
+console.log("Il prezzo finale è",prezzoFinale);
+
+document.getElementById('prezzoFinale').innerHTML = prezzoFinale;
 
 
 
