@@ -1,17 +1,18 @@
 // stabilisco il prezzo al kilometro
 const prezzoKm = 0.21;
 
-// stabilisco sconto per età
-
 // chiedo il chilometraggio
-let chilometraggio = prompt("quanti Km devi viaggiare?");
+let chilometraggio = parseInt(prompt("quanti Km devi viaggiare?"));
 
 console.log("il chilometraggio scelto dall'utente è:",chilometraggio);
 
 // calcolo il prezzo in base alla distanza
+let prezzoAlKm = prezzoKm * chilometraggio;
+
+console.log("Il prezzo per il chilometraggio selezionato è:", prezzoAlKm)
 
 // chiedo l'età
-let eta = prompt("quanti anni hai?");
+let eta = parseInt(prompt("quanti anni hai?"));
 
 console.log("l'età dell utente è:",eta);
 
