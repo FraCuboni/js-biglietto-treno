@@ -5,7 +5,7 @@ const prezzoAlKm = 0.21;
 const sconto18 = 0.80;
 
 // sconto over65
-const sconto65 = 0.60
+const sconto65 = 0.60;
 
 // chiedo il chilometraggio
 let chilometraggio = parseInt(prompt("quanti Km devi viaggiare?"));
@@ -25,17 +25,17 @@ console.log("l'età dell utente è:",etaUtente);
 // calcolo se applicare sconti per l'età
 if(etaUtente<18){
 
-    let prezzo = prezzoKm * sconto18;
-    console.log("Hai diritto a uno sconto del 20%! Nuovo prezzo:", prezzo)
+    let prezzoNA = prezzoKm * sconto18;
+    console.log("L'utente ha diritto a uno sconto del 20%. Nuovo prezzo:", prezzoNA);
 
-}else if(etaUtente>65){
+}else if(etaUtente>=65){
 
-    let prezzo = prezzoKm * sconto65;
-    console.log("Hai diritto a uno sconto del 40%! Nuovo prezzo:", prezzo)
+    let prezzoNA = prezzoKm * sconto65;
+    console.log("L'utente ha diritto a uno sconto del 40%. Nuovo prezzo:", prezzoNA);
 
 }else{
 
-    console.log("Non hai diritto a uno sconto!")
+    console.log("L'utente non ha diritto a uno sconto. Il prezzo rimane:", prezzoKm)
 }
 // approssimo il numero a due decimali
 
