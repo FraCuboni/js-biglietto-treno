@@ -5,6 +5,7 @@
     font-family: "Roboto", sans-serif;
     color: white;
     transition: 500ms;
+    text-align: center;
 }
 
 .container{
@@ -19,12 +20,16 @@
     background-color: white;
     height: 50vh;
     width: 1000px;
-    padding: 10vh 0;
+    gap: 20px;
 
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+}
+
+.small-container:hover{
+    scale: 1.05;
 }
 
 p{
@@ -40,5 +45,36 @@ p{
 }
 
 p:hover{
-    scale: 1.2;
+    scale: 1.1;
+    background-color: lightgreen;
 }
+
+
+#container_sconto{
+    position: relative;
+}
+
+#scontoDel{
+    font-size: 20px;
+    padding: 10px 15px;
+}
+
+#sconto_popup{
+    position: absolute;
+    color: transparent;
+    background-color: transparent;
+    font-size: 16px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    transition: 1s;
+    padding: 10px 15px;
+}
+
+#container_sconto:hover>#sconto_popup{
+    color: white;
+    background-color: lightgreen;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+

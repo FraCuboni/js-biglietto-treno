@@ -30,10 +30,12 @@ console.log("l'età dell utente è:",etaUtente);
 if(etaUtente<18){
 
     prezzoKm = prezzoKm * sconto18;
+    document.getElementById('scontoDel').innerHTML = "hai ricevuto uno sconto del 20%!!!";
    
 }else if(etaUtente>=65){
 
     prezzoKm = prezzoKm * sconto65;
+    document.getElementById('scontoDel').innerHTML = "hai ricevuto uno sconto del 40%!!!";
 
 }
 
